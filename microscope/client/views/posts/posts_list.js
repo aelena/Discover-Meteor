@@ -17,6 +17,6 @@ var postsData = [
 	}
 ];
 
-Template.postsData.helpers({
+Template.postsList.helpers({
 	posts: postsData
 });
