@@ -8,3 +8,5 @@ preserve-inputs
 bootstrap-updated
 handlebars
 router
+accounts-ui-bootstrap-dropdown
+accounts-password

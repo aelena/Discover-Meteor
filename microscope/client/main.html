@@ -3,12 +3,13 @@
 </head> 
 <body>
 	<div class="container"> 
-	<header class="navbar">
+		{{> header}}
+	<!-- <header class="navbar">
 		<div class="navbar-inner">
 		<a class="brand" href="{{postsListPath}}">Microscope</a>
 		</div>
-	</header>
-	<!-- be extra careful with case -->
+	</header> -->
+	<!-- be extra careful with case -->	
 	<div id='main' class='row-fluid'>
 		{{renderPage}}
 	</div>
