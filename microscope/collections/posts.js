@@ -5,3 +5,10 @@
  * making it global 
  */
 Posts = new Meteor.Collection('posts');
+
+Posts.allow({
+	insert: function(userId, doc){
+		// only if you're logged in
+		return !! userId;
+	}
+});
