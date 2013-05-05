@@ -10,8 +10,16 @@ Template.postSubmit.events({
 
 		}	
 
-		post._id = Posts.insert(post);
-		Meteor.Router.to('postPage', post);
+		// post._id = Posts.insert(post);
+		// Meteor.Router.to('postPage', post);
+
+		Meteor.call('post', post, function (error, id){
+			if(error)
+				alert(error);
+			
+			Meteor.Router.to('postPage', id);
+
+		});
 
 
 	}
