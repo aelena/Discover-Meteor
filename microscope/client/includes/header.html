@@ -3,7 +3,9 @@
 		<div class='navbar-inner'>
 			<a class='brand' href="/">Microscope</a> 
 			<ul class="nav">
-				<li><a href="{{postSubmitPath}}">Submit New Post</a></li> </ul>
+				{{#if currentUser}}
+					<li><a href="{{postSubmitPath}}">Submit New Post</a></li> </ul>
+				{{/if}}
 			<ul class="nav pull-right">
 				<li>{{loginButtons}}</li> 
 			</ul>
