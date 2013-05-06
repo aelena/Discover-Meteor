@@ -46,3 +46,8 @@ Posts.allow({
 		return !! userId;
 	}
 });
+
+Posts.allow({
+	update: ownsDocument,
+	remove: ownsDocument
+});
