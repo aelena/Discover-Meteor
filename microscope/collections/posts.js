@@ -51,3 +51,10 @@ Posts.allow({
 	update: ownsDocument,
 	remove: ownsDocument
 });
+
+Posts.deny({
+	update: function(userId, post, fieldNames){
+		// only allowed to edit these three
+		return ( _.without(fieldNames, 'url', 'title').length > 0 );
+	}
+})
