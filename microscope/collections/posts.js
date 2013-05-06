@@ -11,12 +11,8 @@ Meteor.methods({
 
 	post: function(postData){
 
-		console.log(postData);
-
 		var user = Meteor.user(),
 			postWithSameLink = Posts.findOne({url: postData.url});
-
-		console.log(postWithSameLink);
 
 		if(!user)
 			throw new Meteor.Error(401, 'You need to login to post new stuff!');
@@ -25,7 +21,6 @@ Meteor.methods({
 			throw new Meteor.Error(422, 'Please fill in the headline');
 
 		if(postData.url && postWithSameLink){
-			console.log('puta');
 			throw new Meteor.Error(302, 'This link has already been posted', postWithSameLink._id);
 		}
 

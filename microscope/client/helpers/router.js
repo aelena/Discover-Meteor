@@ -9,7 +9,12 @@ Meteor.Router.add ({
 		and: function(id) {Session.set('currentPostID', id);}
 	},
 
-	'/submit': 'postSubmit'
+	'/submit': 'postSubmit',
+
+	'/posts/:_id/edit': {
+		to: 'postEdit',
+		and: function(id) { Session.set ('currentPostID', id);}
+	}
 
 });
 
