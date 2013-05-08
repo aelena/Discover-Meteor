@@ -26,7 +26,14 @@ Meteor.Router.filters({
 			return 'loading'
 		else
 			return 'accessDenied';
+	},
+
+	'clearError': function(page){
+		clearError();
+		return page;
 	}
+
 });
 
 Meteor.Router.filter('requireLogin', {only: 'postSubmit'});
+Meteor.Router.filter('clearError');
