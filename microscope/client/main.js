@@ -3,3 +3,4 @@
  * actually gets the data 
  */
  Meteor.subscribe('posts');
+ Meteor.subscribe('comments');
