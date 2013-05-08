@@ -15,9 +15,14 @@ Template.postSubmit.events({
 
 		Meteor.call('post', post, function (error, id){
 			if(error)
-				alert(error);
+				throwError(error.reason);
 			
-			Meteor.Router.to('postPage', id);
+			if(error.error === 302){
+				Meteor.Router.to('postPage', error.details)
+			}
+			else {
+				Meteor.Router.to('postPage', id);
+			}
 
 		});
 
