@@ -29,7 +29,7 @@ Meteor.Router.filters({
 	},
 
 	'clearError': function(page){
-		clearError();
+		Meteor.Errors.clear();
 		return page;
 	}
 
