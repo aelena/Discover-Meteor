@@ -6,7 +6,8 @@ if (Posts.find().count() === 0){
 		alt: 'Introducing Telescope',
 		author: 'Sacha Greif',
 		url: 'http://sachagreif.com/introducing-telescope/',
-		data_desc: 'The authoritative guide to Telescope'
+		data_desc: 'The authoritative guide to Telescope',
+		commentsCount: 2
 	});
 
 	Posts.insert({
@@ -14,7 +15,9 @@ if (Posts.find().count() === 0){
 		alt: 'Introducing Telescope',
 		author: 'Sacha Greif',
 		url: 'http://sachagreif.com/introducing-telescope/',
-		data_desc: 'The authoritative guide to Telescope'
+		data_desc: 'The authoritative guide to Telescope',
+		commentsCount: 0
+
 	});
 
 	Posts.insert({
@@ -22,7 +25,8 @@ if (Posts.find().count() === 0){
 		alt: 'The Meteor Book', 
 		author: 'Tom Coleman',
 		url: 'http://themeteorbook.com',
-		data_desc: 'The überguide to the hottest hipster hacker framework!'
+		data_desc: 'The überguide to the hottest hipster hacker framework!',
+		commentsCount: 2
 	});
 
 	Posts.insert({
@@ -30,7 +34,9 @@ if (Posts.find().count() === 0){
 		alt: 'Real time Enterprise', 
 		author: 'Antonio Elena',
 		url: 'http://aelena.com/meteorbook',
-		data_desc: 'Enable your enterprise in real time with Meteor and my high consulting fees'
+		data_desc: 'Enable your enterprise in real time with Meteor and my high consulting fees',
+		commentsCount: 1
+
 	});
 
 }
