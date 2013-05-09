@@ -1,1 +1,1 @@
-Comments = new Meteor.Collections('comments');
+Comments = new Meteor.Collection('comments');

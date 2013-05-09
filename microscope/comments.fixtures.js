@@ -17,7 +17,7 @@ url: 'http://sachagreif.com/introducing-telescope/', submitted: now - 7 * 3600 *
 Comments.insert({
 postId: telescopeId,
 userId: tom._id,
-author: tom.profile.name, submitted: now - 5 * 3600 * 1000, body: 'Interesting project Sacha,
+author: tom.profile.name, submitted: now - 5 * 3600 * 1000, body: 'Interesting project Sacha, can I get involved?',
 });
 Comments.insert({
 postId: telescopeId,
@@ -35,5 +35,5 @@ title: 'The Meteor Book', userId: tom._id,
 author: tom.profile.name,
 url: 'http://themeteorbook.com', submitted: now - 12 * 3600 * 1000
 });
-can I get involved?'
+
 }
